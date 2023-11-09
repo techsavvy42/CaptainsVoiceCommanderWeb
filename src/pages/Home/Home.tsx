@@ -31,7 +31,7 @@ export function Home({ userId }: HomeProps) {
   const navigate = useNavigate()
 
   useEffect(() => {
-    setTitle('Chitchatter')
+    setTitle('chat-test-nine')
   }, [setTitle])
 
   const handleRoomNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -140,10 +140,7 @@ export function Home({ userId }: HomeProps) {
       <Divider sx={{ my: 2 }} />
       <Box className="max-w-3xl text-center mx-auto px-4">
         <Typography variant="body1">
-          This is a free communication tool that is designed for simplicity,
-          privacy, and security. All interaction between you and your online
-          peers is encrypted. There is no record of your conversation once you
-          all leave.
+          Welcome to chat-test-nine-psi
         </Typography>
       </Box>
       <Box
@@ -155,7 +152,7 @@ export function Home({ userId }: HomeProps) {
         }}
       >
         <MuiLink
-          href="https://github.com/jeremyckahn/chitchatter"
+          href="https://chat-test-nine-psi.vercel.app/"
           target="_blank"
           sx={theme => ({
             color: theme.palette.text.primary,
@@ -174,14 +171,14 @@ export function Home({ userId }: HomeProps) {
       <Typography variant="body1" sx={{ textAlign: 'center' }}>
         Licensed under{' '}
         <MuiLink
-          href="https://github.com/jeremyckahn/chitchatter/blob/develop/LICENSE"
+          href="https://chat-test-nine-psi.vercel.app/"
           target="_blank"
         >
           GPL v2
         </MuiLink>
         . Please{' '}
         <MuiLink
-          href="https://github.com/jeremyckahn/chitchatter/blob/develop/README.md"
+          href="https://chat-test-nine-psi.vercel.app/"
           target="_blank"
         >
           read the docs
