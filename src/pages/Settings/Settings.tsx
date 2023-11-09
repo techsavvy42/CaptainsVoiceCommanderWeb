@@ -203,8 +203,8 @@ export const Settings = ({ userId }: SettingsProps) => {
           mb: 2,
         })}
       >
-        Chitchatter only stores user preferences and never message content of
-        any kind. This preference data is only stored locally on your device and
+        This only stores user preferences and never message content of
+        any kind. Your preference data is only stored locally on your device and
         not a server.
       </Typography>
       <Divider sx={{ my: 2 }} />
