@@ -73,8 +73,8 @@ const getConfigFromSdk = () => {
 
 function Bootstrap({
   persistedStorage: persistedStorageProp = localforage.createInstance({
-    name: 'chitchatter',
-    description: 'Persisted settings data for chitchatter',
+    name: 'Captains Voice Commander',
+    description: 'Persisted settings data for Captains Voice Commander',
   }),
   getUuid = uuid,
 }: BootstrapProps) {
@@ -139,7 +139,7 @@ function Bootstrap({
             }
           } catch (e) {
             console.error(
-              'Chitchatter configuration from parent frame could not be loaded'
+              'Captains Voice Commander configuration from parent frame could not be loaded'
             )
           }
         }

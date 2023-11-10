@@ -8,7 +8,7 @@ import { QueryParamKeys } from '../src/models/shell'
 import { isColorMode, UserSettings } from '../src/models/settings'
 import { iframeFeatureAllowList } from '../src/config/iframeFeatureAllowList'
 
-export const defaultRoot = 'https://chitchatter.im/'
+export const defaultRoot = 'https://chat-test-nine-psi.vercel.app/'
 
 // NOTE: This is a subset of standard iframe attributes:
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attributes
@@ -103,7 +103,7 @@ class ChatEmbed extends HTMLElement {
     window.addEventListener('message', this.handleConfigRequestedMessage)
 
     this.configRequestExpirationTimout = setTimeout(() => {
-      console.error(`[chitchatter-sdk] configuration was not sent successfully`)
+      console.error(`[sdk] configuration was not sent successfully`)
       this.stopListeningForConfigRequest()
     }, configRequestTimeout)
   }

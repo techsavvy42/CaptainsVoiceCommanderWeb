@@ -180,7 +180,7 @@ export const Settings = ({ userId }: SettingsProps) => {
           </PeerNameDisplay>
         </strong>{' '}
         to a new, randomly-assigned name. It will also reset all of your saved
-        Chitchatter application preferences.
+        Captains Voice Commander application preferences.
       </Typography>
       <Button
         variant="outlined"
