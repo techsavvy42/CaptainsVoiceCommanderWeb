@@ -122,6 +122,18 @@ export function Home({ userId }: HomeProps) {
             >
               Join private room
             </Button>
+            <Button
+              variant="contained"
+              color="secondary"
+              onClick={handleGetEmbedCodeClick}
+              sx={{
+                marginTop: 2,
+                marginLeft: 2,
+              }}
+              disabled={!isRoomNameValid}
+            >
+              changed here123
+            </Button>
           </Box>
         </form>
       </main>
