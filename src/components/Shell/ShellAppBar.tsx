@@ -137,16 +137,6 @@ export const ShellAppBar = ({
                     <Link />
                   </IconButton>
                 </Tooltip>
-                <Tooltip title="Show QR Code">
-                  <IconButton
-                    size="large"
-                    color="inherit"
-                    aria-label="Show QR Code"
-                    onClick={handleQRCodeClick}
-                  >
-                    <QrCode2 />
-                  </IconButton>
-                </Tooltip>
               </>
             )}
             <Tooltip title="Show Room Controls">
@@ -172,7 +162,7 @@ export const ShellAppBar = ({
                 {isFullscreen ? <FullscreenExit /> : <Fullscreen />}
               </IconButton>
             </Tooltip>
-            <Tooltip title="Click to show peer list">
+            <Tooltip title="Edit UserName / View User List">
               <IconButton
                 size="large"
                 edge="end"
