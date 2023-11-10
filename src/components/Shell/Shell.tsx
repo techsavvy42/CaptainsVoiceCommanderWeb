@@ -328,7 +328,7 @@ export const Shell = ({ appNeedsUpdate, children, userPeerId }: ShellProps) => {
           <>
             <UpgradeDialog appNeedsUpdate={appNeedsUpdate} />
             <Box
-              className="Chitchatter"
+              className="CaptainsVoiceCommander"
               sx={{
                 height: '100vh',
                 display: 'flex',
@@ -409,7 +409,7 @@ export const Shell = ({ appNeedsUpdate, children, userPeerId }: ShellProps) => {
                       href="https://chat-test-nine-psi.vercel.app/"
                       target="_blank"
                     >
-                      Chitchatter
+                      Captains Voice Commander
                     </Link>
                   </Typography>
                 ) : null}

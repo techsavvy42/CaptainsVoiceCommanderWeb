@@ -100,7 +100,7 @@ export const EmbedCodeDialog = ({
             href="https://chat-test-nine-psi.vercel.app/"
             target="_blank"
           >
-            Chitchatter SDK
+            Captains Voice Commander SDK
           </Link>{' '}
           to embed a chat room as a{' '}
           <Link

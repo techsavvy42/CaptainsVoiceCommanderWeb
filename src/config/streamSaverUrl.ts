@@ -1,6 +1,6 @@
 export const streamSaverUrl =
   process.env.REACT_APP_STREAMSAVER_URL ??
-  // If you would like to host your own Chitchatter instance with an
+  // If you would like to host your own Captains Voice Commander instance with an
   // alternative StreamSaver fork to facilitate file sharing, change this
   // string to its respective .mitm.html URL.
   //

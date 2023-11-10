@@ -34,7 +34,7 @@ export const PasswordPrompt = ({
         <DialogContent>
           <DialogContentText sx={{ mb: 2 }}>
             You will only be able to connect to room peers that enter the same
-            password. Due to the decentralized nature of Chitchatter, it is
+            password. Due to the decentralized nature of Captains Voice Commander, it is
             impossible to know if the password you enter will match the password
             entered by other peers.
           </DialogContentText>
