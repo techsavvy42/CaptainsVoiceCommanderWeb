@@ -63,39 +63,5 @@ export function RoomFileUploadControls({
 
   const buttonIcon = isSharingFile ? <Folder /> : <FolderOff />
 
-  return (
-    <Box
-      sx={{
-        alignItems: 'center',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        px: 1,
-      }}
-    >
-      <input
-        multiple
-        ref={fileInputRef}
-        type="file"
-        id="file-upload"
-        className="hidden"
-        onChange={handleFileSelect}
-      />
-      <Tooltip
-      >
-        <MediaButton
-          isActive={isSharingFile}
-          aria-label="share screen"
-          onClick={handleToggleScreenShareButtonClick}
-          disabled={disableFileUpload}
-        >
-          {isFileSharingEnabled ? (
-            buttonIcon
-          ) : (
-            <CircularProgress variant="indeterminate" color="inherit" />
-          )}
-        </MediaButton>
-      </Tooltip>
-    </Box>
-  )
+ 
 }
