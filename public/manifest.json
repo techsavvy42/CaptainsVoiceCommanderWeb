@@ -25,34 +25,34 @@
   "background_color": "#222222",
   "screenshots": [
     {
-      "src": "screenshots/home-desktop.png",
+      "src": "",
       "sizes": "2160x1620",
       "type": "image/png"
     },
     {
-      "src": "screenshots/public-room-desktop.png",
+      "src": "",
       "sizes": "2160x1620",
       "type": "image/png"
     },
     {
-      "src": "screenshots/public-room-desktop-with-video.png",
+      "src": "",
       "sizes": "2160x1620",
       "type": "image/png"
     },
     {
-      "src": "screenshots/home-mobile-dark.png",
+      "src": "",
       "sizes": "750x1334",
       "type": "image/png",
       "form_factor": "narrow"
     },
     {
-      "src": "screenshots/home-mobile-light.png",
+      "src": "",
       "sizes": "750x1334",
       "type": "image/png",
       "form_factor": "narrow"
     },
     {
-      "src": "screenshots/public-room-mobile.png",
+      "src": "",
       "sizes": "750x1334",
       "type": "image/png",
       "form_factor": "narrow"
