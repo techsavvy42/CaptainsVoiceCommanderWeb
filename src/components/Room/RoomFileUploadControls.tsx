@@ -63,5 +63,16 @@ export function RoomFileUploadControls({
 
   const buttonIcon = isSharingFile ? <Folder /> : <FolderOff />
 
- 
+  return (
+    <Box
+      sx={{
+        alignItems: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        px: 1,
+      }}
+    >
+    </Box>
+  )
 }
