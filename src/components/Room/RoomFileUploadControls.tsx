@@ -82,11 +82,6 @@ export function RoomFileUploadControls({
         onChange={handleFileSelect}
       />
       <Tooltip
-        title={
-          isSharingFile
-            ? `Stop sharing ${shareFileLabel}`
-            : 'Share files with the room'
-        }
       >
         <MediaButton
           isActive={isSharingFile}
