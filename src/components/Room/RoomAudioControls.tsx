@@ -53,16 +53,28 @@ export function RoomAudioControls({ peerRoom }: RoomAudioControlsProps) {
     setAudioAnchorEl(null)
   }
 
+  const [isPushToTalkEnabled, setIsPushToTalkEnabled] = useState(false);
+
+  const handleTogglePushToTalk = () => {
+    setIsPushToTalkEnabled(!isPushToTalkEnabled);
+  };
+  
   const handleMouseDown = () => {
-    setIsSpeakingToRoom(true);
+    if (isPushToTalkEnabled) {
+      setIsSpeakingToRoom(true);
+    }
   };
   
   const handleMouseUp = () => {
-    setIsSpeakingToRoom(false);
+    if (isPushToTalkEnabled) {
+      setIsSpeakingToRoom(false);
+    }
   };
   
   const handleMouseLeave = () => {
-    setIsSpeakingToRoom(false);
+    if (isPushToTalkEnabled) {
+      setIsSpeakingToRoom(false);
+    }
   };
 
   return (
@@ -92,6 +104,8 @@ export function RoomAudioControls({ peerRoom }: RoomAudioControlsProps) {
         {isSpeakingToRoom ? <RecordVoiceOver /> : <VoiceOverOff />}
       </MediaButton>
     </Tooltip>
+    {isPushToTalkEnabled && (
+      <>
       {audioDevices.length > 0 && isSpeakingToRoom && (
         <Box sx={{ mt: 1 }}>
           <List
@@ -136,6 +150,8 @@ export function RoomAudioControls({ peerRoom }: RoomAudioControlsProps) {
           </Menu>
         </Box>
       )}
+      </>
+    )}
     </Box>
   )
 }
