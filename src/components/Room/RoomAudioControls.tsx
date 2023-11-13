@@ -53,30 +53,6 @@ export function RoomAudioControls({ peerRoom }: RoomAudioControlsProps) {
     setAudioAnchorEl(null)
   }
 
-  const [isPushToTalkEnabled, setIsPushToTalkEnabled] = useState(false);
-
-  const handleTogglePushToTalk = () => {
-    setIsPushToTalkEnabled(!isPushToTalkEnabled);
-  };
-  
-  const handleMouseDown = () => {
-    if (isPushToTalkEnabled) {
-      setIsSpeakingToRoom(true);
-    }
-  };
-  
-  const handleMouseUp = () => {
-    if (isPushToTalkEnabled) {
-      setIsSpeakingToRoom(false);
-    }
-  };
-  
-  const handleMouseLeave = () => {
-    if (isPushToTalkEnabled) {
-      setIsSpeakingToRoom(false);
-    }
-  };
-
   return (
     <Box
       sx={{
@@ -87,25 +63,21 @@ export function RoomAudioControls({ peerRoom }: RoomAudioControlsProps) {
         px: 1,
       }}
     >
-    <Tooltip
-      title={
-        isSpeakingToRoom
-          ? 'Turn off microphone'
-          : 'Turn on microphone and speak to room'
-      }
-    >
-      <MediaButton
-        isActive={isSpeakingToRoom}
-        aria-label="call"
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseLeave}
+      <Tooltip
+        title={
+          isSpeakingToRoom
+            ? 'Turn off microphone'
+            : 'Turn on microphone and speak to room'
+        }
       >
-        {isSpeakingToRoom ? <RecordVoiceOver /> : <VoiceOverOff />}
-      </MediaButton>
-    </Tooltip>
-    {isPushToTalkEnabled && (
-      <>
+        <MediaButton
+          isActive={isSpeakingToRoom}
+          aria-label="call"
+          onClick={handleVoiceCallClick}
+        >
+          {isSpeakingToRoom ? <RecordVoiceOver /> : <VoiceOverOff />}
+        </MediaButton>
+      </Tooltip>
       {audioDevices.length > 0 && isSpeakingToRoom && (
         <Box sx={{ mt: 1 }}>
           <List
@@ -150,8 +122,6 @@ export function RoomAudioControls({ peerRoom }: RoomAudioControlsProps) {
           </Menu>
         </Box>
       )}
-      </>
-    )}
     </Box>
   )
 }
