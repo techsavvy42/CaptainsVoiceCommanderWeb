@@ -159,17 +159,10 @@ export function Home({ userId }: HomeProps) {
       <Typography variant="body1" sx={{ textAlign: 'center' }}>
         Licensed under{' '}
         <MuiLink
-          href="https://chat-test-nine-psi.vercel.app/"
+          href="https://github.com/techsavvy42/ChatTest/blob/main/LICENSE"
           target="_blank"
         >
           GPL v2
-        </MuiLink>
-        . Please{' '}
-        <MuiLink
-          href="https://chat-test-nine-psi.vercel.app/"
-          target="_blank"
-        >
-          read the docs
         </MuiLink>
         .
       </Typography>
